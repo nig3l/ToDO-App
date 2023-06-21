@@ -5,12 +5,12 @@
         <th> Item </th>
     </tr>
 
-    {% for task in object_list %}
+    {% for task in task %}
     <tr>
         <td> {{task.title}} </td>
     </tr>
     {% empty %}
-    
+
     <h3>No Items In List</h3>
 
     {% endfor %}
