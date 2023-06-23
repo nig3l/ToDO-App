@@ -4,9 +4,15 @@ from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 
+from django.contrib.auth.views import LoginView
+
 from .models import Task
 
 # Create your views here.
+
+class CustomloginView(LoginView):
+    
+
 
 class TaskList(ListView):
     model = Task
