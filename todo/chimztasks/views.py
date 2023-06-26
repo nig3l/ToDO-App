@@ -5,4 +5,4 @@ import requests
 # Create your views here.
 
 def index(request):
-    return HttpResponse("Yoo wozaaa")
+    return render(request , 'chimztasks/list.html')
