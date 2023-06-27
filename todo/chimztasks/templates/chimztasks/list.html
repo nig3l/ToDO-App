@@ -1,6 +1,7 @@
 <h1>Todo</h1>
 
-<form action="" method=""> 
+<form action="/" method="POST"> 
+    {% csrf_token %}
     {{form.title}}
     <input type="submit" name="Create Task">
 </form>
