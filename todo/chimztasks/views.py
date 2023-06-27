@@ -25,3 +25,9 @@ def index(request):
 
 
     return render(request , 'chimztasks/list.html', context)
+
+def updateTask(request,pk):
+   
+   task = Task.objects.get(id=pk)
+   
+   return render(request,'chimztasks/update_task.html')
