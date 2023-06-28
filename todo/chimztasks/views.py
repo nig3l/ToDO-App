@@ -45,3 +45,12 @@ def updateTask(request,pk):
    context = {'form':form}
    
    return render(request,'chimztasks/update_task.html',context)
+
+
+def deleteTask(request,pk):
+   item = Task.objects.get(id=pk)
+
+   context = {'item':item}
+
+   
+   return render(request,'chimztasks/delete.html',context)
